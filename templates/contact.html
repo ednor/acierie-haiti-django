@@ -1,0 +1,94 @@
+{% extends "base.html" %} {% load static %} {% block titre %}Contact | Aciérie d'Haïti{% endblock %} {% block contenu %}
+
+<!-- Contenu HTML original de la page -->
+
+<header class="page-hero">
+  <div class="container">
+    <span class="hero-badge"><i class="bi bi-envelope"></i> Échange et assistance</span>
+    <h1 class="page-title">Parlons de votre prochain projet</h1>
+    <p class="lead text-white-50 col-lg-8">
+      Retrouvez ici les principales informations de contact de l’entreprise pour poser vos questions, demander des renseignements ou entrer en
+      relation avec notre équipe.
+    </p>
+  </div>
+</header>
+
+<section class="section-space">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-5">
+        <div class="contact-card p-4 p-lg-5 bg-white">
+          <span class="badge-soft mb-3 d-inline-flex">Coordonnées</span>
+          <h2 class="section-title h3">Informations utiles</h2>
+          <ul class="list-unstyled contact-list mt-4">
+            <li><strong>Adresse :</strong> RN1, Port-au-Prince, Haïti</li>
+            <li><strong>Téléphone :</strong> +509 28 14 0000</li>
+            <li><strong>Site web :</strong> www.acieriedhaiti.com</li>
+            <li><strong>Horaires :</strong> Lundi à Vendredi, 8h00 à 17h00</li>
+            <li><strong>Samedi :</strong> 8h00 à 15h00</li>
+          </ul>
+          <hr />
+          <div class="map-placeholder">
+            <div>
+              <i class="bi bi-geo-alt-fill fs-1 mb-3"></i>
+              <h5 class="fw-bold">Zone desservie</h5>
+              <p class="mb-0">
+                Port-au-Prince et les toutes les villes de province. Accompagnement de projets dans différentes zones selon les besoins logistiques.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="contact-card p-4 p-lg-5 bg-white">
+          <span class="badge-soft mb-3 d-inline-flex">Formulaire de contact</span>
+          <h2 class="section-title h3">Envoyer une demande</h2>
+          <p class="small-muted">
+            Utilisez ce formulaire pour demander des informations, poser vos questions ou entrer en relation avec l’entreprise.
+          </p>
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="row g-3 mt-2">
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="d-none">
+              <label>Ne pas remplir si vous êtes humain : <input name="bot-field" /></label>
+            </p>
+            <div class="col-md-6">
+              <label for="name" class="form-label">Nom complet</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom" required />
+            </div>
+            <div class="col-md-6">
+              <label for="company" class="form-label">Entreprise</label>
+              <input type="text" class="form-control" id="company" name="company" placeholder="Nom de votre entreprise" />
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Adresse email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="nom@exemple.com" required />
+            </div>
+            <div class="col-md-6">
+              <label for="phone" class="form-label">Téléphone</label>
+              <input type="tel" class="form-control" id="phone" name="phone" placeholder="+509 ..." />
+            </div>
+            <div class="col-12">
+              <label for="subject" class="form-label">Sujet</label>
+              <select id="subject" name="subject" class="form-select" required>
+                <option value="" selected disabled>Choisir un sujet</option>
+                <option>Demande d'information</option>
+                <option>Devis de matériaux</option>
+                <option>Approvisionnement de chantier</option>
+                <option>Partenariat</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="6" placeholder="Décrivez votre besoin..." required></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-brand btn-lg rounded-pill px-4">Envoyer le message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

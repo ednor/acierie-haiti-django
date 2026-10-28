@@ -1,0 +1,207 @@
+{% extends "base.html" %} {% load static %} {% block titre %}Produits | Aciérie d'Haïti{% endblock %} {% block contenu %}
+
+<!-- Contenu HTML original de la page -->
+<header class="page-hero">
+  <div class="container">
+    <span class="hero-badge"><i class="bi bi-box-seam"></i> Nos produits</span>
+    <h1 class="page-title">Des produits pour les chantiers et les professionnels</h1>
+    <p class="lead text-white-50 col-lg-8">
+      Découvrez une sélection de produits destinés à répondre aux besoins de la construction, avec des solutions adaptées aux réalités du marché
+      haïtien.
+    </p>
+  </div>
+</header>
+
+<section class="section-space">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-6 col-xl-4">
+        <div class="project-card bg-white overflow-hidden h-100">
+          <img src="{% static 'images/fer-beton.jpg' %}" alt=" fers à béton" class="product-thumb" />
+          <div class="p-4">
+            <div class="icon-box mb-3"><i class="bi bi-boxes"></i></div>
+            <h5 class="fw-bold">Fers à béton</h5>
+            <p class="small-muted mb-0">
+              Barres utilisées pour le renforcement des structures en béton armé, adaptées à différents types de chantiers.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <div class="project-card bg-white overflow-hidden h-100">
+          <img src="{% static 'images/fil.jpg' %}" alt=" fils d'attache" class="product-thumb" />
+          <div class="p-4">
+            <div class="icon-box mb-3"><i class="bi bi-link-45deg"></i></div>
+            <h5 class="fw-bold">Fils d'attache</h5>
+            <p class="small-muted mb-0">Produits utilisés pour l'assemblage sur chantier et la préparation des armatures avant coulage.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <div class="project-card bg-white overflow-hidden h-100">
+          <img src="{% static 'images/clous2.jpg' %}" alt=" clous et fixations" class="product-thumb" />
+          <div class="p-4">
+            <div class="icon-box mb-3"><i class="bi bi-hammer"></i></div>
+            <h5 class="fw-bold">Clous et fixations</h5>
+            <p class="small-muted mb-0">Éléments indispensables pour les travaux de montage, de coffrage et de finition dans plusieurs contextes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <div class="project-card bg-white overflow-hidden h-100">
+          <img src="{% static 'images/profiles.jpg' %}" alt=" profilés structuraux" class="product-thumb" />
+          <div class="p-4">
+            <div class="icon-box mb-3"><i class="bi bi-columns-gap"></i></div>
+            <h5 class="fw-bold">Profilés structuraux</h5>
+            <p class="small-muted mb-0">
+              Tubes et éléments métalliques utilisés pour des structures légères ou semi-lourdes selon les besoins du projet.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <div class="project-card bg-white overflow-hidden h-100">
+          <img src="{% static 'images/bois.jpg' %}" alt=" bois et matériaux complémentaires" class="product-thumb" />
+          <div class="p-4">
+            <div class="icon-box mb-3"><i class="bi bi-tree"></i></div>
+            <h5 class="fw-bold">Bois et matériaux complémentaires</h5>
+            <p class="small-muted mb-0">
+              Des produits qui complètent les chantiers, notamment pour le coffrage, le support temporaire et certains aménagements.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <div class="project-card bg-white overflow-hidden h-100">
+          <img src="{% static 'images/livraison.jpg' %}" alt=" approvisionnement et logistique" class="product-thumb" />
+          <div class="p-4">
+            <div class="icon-box mb-3"><i class="bi bi-truck-front"></i></div>
+            <h5 class="fw-bold">Approvisionnement et logistique</h5>
+            <p class="small-muted mb-0">Organisation des livraisons et suivi des besoins pour limiter les ruptures sur les chantiers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-space section-light">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5">
+        <span class="badge-soft mb-3 d-inline-flex">Pourquoi ces produits</span>
+        <h2 class="section-title">Une offre pensée pour les réalités du chantier</h2>
+        <p class="section-subtitle">
+          Cette sélection met en avant des produits utiles aux chantiers, avec une présentation claire et structurée pour faciliter la découverte de
+          l’offre.
+        </p>
+        <ul class="list-check mt-4">
+          <li>Des produits destinés aux besoins courants du bâtiment.</li>
+          <li>Une offre pensée pour les professionnels et les projets de construction.</li>
+          <li>Une présentation visuelle simple pour mieux parcourir l’inventaire.</li>
+          <li>Des informations claires pour découvrir chaque catégorie de produit.</li>
+        </ul>
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="info-card p-4 bg-white">
+              <h5 class="fw-bold">Résidentiel</h5>
+              <p class="small-muted mb-0">Maisons, immeubles résidentiels, rénovations et extensions.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-card p-4 bg-white">
+              <h5 class="fw-bold">Commercial</h5>
+              <p class="small-muted mb-0">Magasins, bureaux, dépôts et bâtiments de services.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-card p-4 bg-white">
+              <h5 class="fw-bold">Industriel</h5>
+              <p class="small-muted mb-0">Entrepôts, ateliers, structures techniques et zones de production.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-card p-4 bg-white">
+              <h5 class="fw-bold">Institutionnel</h5>
+              <p class="small-muted mb-0">Écoles, centres de santé, bâtiments administratifs et infrastructures collectives.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-space">
+  <div class="container">
+    <div class="mb-5">
+      <span class="badge-soft mb-3 d-inline-flex">Questions fréquentes</span>
+      <h2 class="section-title">FAQ produits et contact</h2>
+      <p class="section-subtitle">
+        Retrouver ici quelques réponses utiles sur les produits proposés, les types de clients servis et les moyens de contact.
+      </p>
+    </div>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item mb-3">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#faqOne"
+            aria-expanded="true"
+            aria-controls="faqOne"
+          >
+            Quels types de clients peuvent être servis ?
+          </button>
+        </h2>
+        <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Les produits conviennent aux particuliers, entreprises, institutions et responsables de grands chantiers.</div>
+        </div>
+      </div>
+      <div class="accordion-item mb-3">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#faqTwo"
+            aria-expanded="false"
+            aria-controls="faqTwo"
+          >
+            L'entreprise propose-t-elle seulement de l'acier ?
+          </button>
+        </h2>
+        <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Non. Le site présente aussi des produits complémentaires utiles aux chantiers, comme les clous, les fils d'attache et certains matériaux
+            connexes.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#faqThree"
+            aria-expanded="false"
+            aria-controls="faqThree"
+          >
+            Comment demander des informations ou un devis ?
+          </button>
+        </h2>
+        <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Il suffit d’utiliser la page Contact pour demander des renseignements complémentaires ou entrer en relation avec l’entreprise.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

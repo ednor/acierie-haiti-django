@@ -1,0 +1,108 @@
+{% extends "base.html" %} {% load static %} {% block titre %}À propos | Aciérie d'Haïti{% endblock %} {% block contenu %}
+
+<!-- Contenu HTML original de la page -->
+<header class="page-hero">
+  <div class="container">
+    <span class="hero-badge"><i class="bi bi-info-circle"></i> Histoire, mission et valeurs</span>
+    <h1 class="page-title">Une entreprise ancrée dans l'industrie haïtienne</h1>
+    <p class="lead text-white-50 col-lg-8">
+      Aciérie d'Haïti est une entreprise historique du secteur métallurgique, avec une orientation vers la construction, l'approvisionnement et la
+      continuité opérationnelle.
+    </p>
+  </div>
+</header>
+
+<section class="section-space">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="about-visual">
+          <img src="{% static 'images/timeline.jpg' %}" alt="Illustration historique d'Aciérie d'Haïti" class="img-fluid border shadow-sm" />
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <span class="badge-soft mb-3 d-inline-flex">Présentation</span>
+        <h2 class="section-title">Bâtir une base industrielle fiable</h2>
+        <p>
+          Aciérie d'Haïti a été fondée au début des années 1970. L'entreprise est connue pour avoir participé à l'implantation d'une activité
+          sidérurgique orientée vers les barres d'armature, avant d'élargir son offre à d'autres produits de construction.
+        </p>
+        <p>
+          Aujourd'hui, son image repose sur la disponibilité de produits métalliques, l'expérience industrielle et la volonté d'accompagner les
+          projets de construction à différentes échelles.
+        </p>
+        <ul class="list-check mt-4">
+          <li>Présence dans l'univers de la métallurgie et des matériaux de construction.</li>
+          <li>Orientation vers les besoins résidentiels, commerciaux et industriels.</li>
+          <li>Approche axée sur la qualité, la réactivité et la solidité des fournitures.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-space section-light">
+  <div class="container">
+    <div class="mb-5">
+      <span class="badge-soft mb-3 d-inline-flex">Chronologie</span>
+      <h2 class="section-title">Notre parcours</h2>
+      <p class="section-subtitle">Un aperçu de moments clés qui illustrent le parcours de l’entreprise.</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-year">1972</div>
+        <h5 class="fw-bold mt-2">Fondation de l'entreprise</h5>
+        <p class="small-muted mb-0">Mise en place des bases industrielles et lancement de la première ligne liée à l'acier de construction.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">1973</div>
+        <h5 class="fw-bold mt-2">Premiers produits commercialisés</h5>
+        <p class="small-muted mb-0">Disponibilité des premières barres destinées aux chantiers et démarrage de l'activité commerciale.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">1980</div>
+        <h5 class="fw-bold mt-2">Diversification de l'offre</h5>
+        <p class="small-muted mb-0">Ajout d'autres produits comme les clous, les fils d'attache et certains profilés structuraux.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">Aujourd'hui</div>
+        <h5 class="fw-bold mt-2">Centre de distribution reconnu</h5>
+        <p class="small-muted mb-0">
+          L'entreprise est associée à une offre plus large pour les professionnels de la construction et les grands projets.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-space">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="value-card p-4 bg-white">
+          <div class="icon-box mb-3"><i class="bi bi-bullseye"></i></div>
+          <h5 class="fw-bold">Mission</h5>
+          <p class="small-muted mb-0">
+            Fournir des matériaux de qualité et des solutions fiables pour soutenir le développement des chantiers en Haïti.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="value-card p-4 bg-white">
+          <div class="icon-box mb-3"><i class="bi bi-eye"></i></div>
+          <h5 class="fw-bold">Vision</h5>
+          <p class="small-muted mb-0">Être une référence moderne et accessible dans le domaine des matériaux métalliques et structuraux.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="value-card p-4 bg-white">
+          <div class="icon-box mb-3"><i class="bi bi-shield-check"></i></div>
+          <h5 class="fw-bold">Valeurs</h5>
+          <p class="small-muted mb-0">Rigueur, sécurité, engagement client, adaptation et recherche constante d'efficacité.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,155 @@
+{% extends "base.html" %} {% load static %} {% block titre %}Projets | Aciérie d'Haïti{% endblock %} {% block contenu %}
+
+<!-- Contenu HTML original de la page -->
+
+<header class="page-hero">
+  <div class="container">
+    <span class="hero-badge"><i class="bi bi-kanban"></i> Réalisations</span>
+    <h1 class="page-title">Des projets qui illustrent notre savoir-faire</h1>
+    <p class="lead text-white-50 col-lg-8">
+      Cette page met en avant quelques réalisations illustrant l’expérience de l’entreprise dans le domaine de la construction et des matériaux.
+    </p>
+  </div>
+</header>
+
+<section class="section-space">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="project-card bg-white h-100 overflow-hidden">
+          <img src="{% static 'images/hangar.jpg' %}" alt="Projet de structure métallique" />
+          <div class="p-4">
+            <div class="project-tags mb-3">
+              <span class="badge text-bg-light border">Profilés</span>
+              <span class="badge text-bg-light border">Entrepôt</span>
+            </div>
+            <h5 class="fw-bold">Hangar logistique</h5>
+            <p class="small-muted">Fourniture de profilés et éléments métalliques pour un espace de stockage destiné à une activité commerciale.</p>
+            <button class="btn btn-brand rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#projectOne">Voir plus</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="project-card bg-white h-100 overflow-hidden">
+          <img src="{% static 'images/chantier.jpg' %}" alt="Projet d'approvisionnement chantier" />
+          <div class="p-4">
+            <div class="project-tags mb-3">
+              <span class="badge text-bg-light border">Livraison</span>
+              <span class="badge text-bg-light border">Chantier</span>
+            </div>
+            <h5 class="fw-bold">Appui à un chantier résidentiel</h5>
+            <p class="small-muted">Approvisionnement progressif de matériaux afin de soutenir le rythme d'exécution d'un programme résidentiel.</p>
+            <button class="btn btn-brand rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#projectTwo">Voir plus</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="project-card bg-white h-100 overflow-hidden">
+          <img src="{% static 'images/batiment.jpg' %}" alt="Projet de bâtiment commercial" />
+          <div class="p-4">
+            <div class="project-tags mb-3">
+              <span class="badge text-bg-light border">Commerce</span>
+              <span class="badge text-bg-light border">Structure</span>
+            </div>
+            <h5 class="fw-bold">Bâtiment commercial</h5>
+            <p class="small-muted">Sélection de matériaux pour la construction d'un bâtiment à usage commercial et de services.</p>
+            <button class="btn btn-brand rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#projectThree">Voir plus</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-space section-light">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="stat-card metric bg-white">
+          <h3>1972</h3>
+          <p>Une entreprise liée au secteur depuis plusieurs décennies</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="stat-card metric bg-white">
+          <h3>Local</h3>
+          <p>Une présence au service du secteur de la construction</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="stat-card metric bg-white">
+          <h3>Expérience</h3>
+          <p>Un savoir-faire illustré par plusieurs réalisations</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="modal fade" id="projectOne" tabindex="-1" aria-labelledby="projectOneLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 rounded-4 overflow-hidden">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title" id="projectOneLabel">Hangar logistique</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+      <div class="modal-body p-4">
+        <p>
+          Ce projet illustre l'utilisation de profilés métalliques et d'éléments de structure pour un espace de stockage à usage intensif. L'objectif
+          est de garantir résistance, durabilité et flexibilité d'exploitation.
+        </p>
+        <ul class="list-check">
+          <li>Profilés structuraux pour la charpente</li>
+          <li>Clous et fixations pour travaux secondaires</li>
+          <li>Conseil sur la préparation des fournitures</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="projectTwo" tabindex="-1" aria-labelledby="projectTwoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 rounded-4 overflow-hidden">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title" id="projectTwoLabel">Appui à un chantier résidentiel</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+      <div class="modal-body p-4">
+        <p>
+          Exemple d'accompagnement axé sur la fourniture progressive de matériaux, avec une attention particulière à la disponibilité des produits et
+          à la coordination des livraisons.
+        </p>
+        <ul class="list-check">
+          <li>Barres d'armature pour les fondations et poteaux</li>
+          <li>Fils d'attache pour la préparation des cages</li>
+          <li>Suivi logistique pour limiter les interruptions</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="projectThree" tabindex="-1" aria-labelledby="projectThreeLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 rounded-4 overflow-hidden">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title" id="projectThreeLabel">Bâtiment commercial</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+      <div class="modal-body p-4">
+        <p>
+          Le projet met en valeur la combinaison de produits métalliques et de matériaux complémentaires nécessaires à un bâtiment accueillant du
+          public ou des activités commerciales.
+        </p>
+        <ul class="list-check">
+          <li>Matériaux pour structures et renforts</li>
+          <li>Fixations adaptées à plusieurs étapes du chantier</li>
+          <li>Approche orientée vers la durabilité</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
